@@ -5,7 +5,7 @@
     <TargetFrameworks>net9.0;net8.0;net6.0;netstandard2.1</TargetFrameworks>
 
     <!-- NuGet package metadata -->
-    <PackageId>DynamoOrm</PackageId>
+    <PackageId>Dynamo.Orm.SQL</PackageId>
     <Version>0.1.0</Version> <!-- bump for each publish -->
     <Authors>Emmanuel Ayela</Authors>
     <Company></Company>
