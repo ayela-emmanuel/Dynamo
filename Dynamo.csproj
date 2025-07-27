@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Target what you support -->
+    <TargetFrameworks>net9.0;net8.0;net6.0;netstandard2.1</TargetFrameworks>
+
+    <!-- NuGet package metadata -->
+    <PackageId>DynamoOrm</PackageId>
+    <Version>0.1.0</Version> <!-- bump for each publish -->
+    <Authors>Emmanuel Ayela</Authors>
+    <Company></Company>
+    <Description>A tiny attribute-driven micro-ORM for MySQL using Dapper + MySqlConnector. Includes schema sync and pagination.</Description>
+    <PackageTags>orm;mysql;dapper;micro-orm;schema;repository</PackageTags>
+
+    <!-- Licensing & repo info -->
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/ayela-emmanuel/dynamo</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <!-- NuGet visuals -->
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+
+    <!-- Build/package behaviors -->
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- SourceLink for better debugging from NuGet -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Ensure README and icon make it into the .nupkg -->
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="icon.png"  Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.*" />
+    <PackageReference Include="MySqlConnector" Version="2.*" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.*" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>

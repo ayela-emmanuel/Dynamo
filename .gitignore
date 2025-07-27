@@ -1,0 +1,73 @@
+## OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## IDEs
+.vs/
+.idea/
+.vscode/
+
+## Build artifacts
+bin/
+obj/
+out/
+[Bb]uild/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+[Aa]rtifacts/
+*.cache
+*.obj
+*.pdb
+
+## Tests & diagnostics
+TestResults/
+*.coverage
+*.coveragexml
+.coverage/
+.coverlet/
+BenchmarkDotNet.Artifacts/
+*.trx
+*.log
+logs/
+
+## NuGet
+# Pack outputs are already under bin/Release, but ignore any stray packages
+*.nupkg
+*.snupkg
+# Old-style packages folder (rare)
+packages/
+
+## User/IDE state
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+_ReSharper*/
+*.DotSettings.user
+*.ncrunch*
+*.localhistory/
+
+## Publish profiles (optional to commit; usually ignore)
+**/Properties/PublishProfiles/*
+
+## Config & secrets (keep your public appsettings.* but ignore local/dev-only)
+*.local.json
+appsettings.*.local.json
+local.settings.json    # Azure Functions local config
+.env
+.env.*
+
+## Generated code/docs (adjust if you generate API docs)
+site/
+docs/_site/
+
+## Keep these in the repo (explicitly noted; not ignored above)
+!README.md
+!LICENSE
+!icon.png
+!NuGet.config
+!.github/
